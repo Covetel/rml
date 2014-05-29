@@ -1,0 +1,39 @@
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="example_03.pdf">
+  <template showBoundary="0">
+    <pageTemplate id="main">
+      <pageGraphics>
+	<!-- Use drawString to place a fixed title on the page -->
+	<drawString x="100" y="700"> Hello!</drawString>
+      </pageGraphics>
+      <frame id="first" x1="100" y1="400" width="150" height="200"/>
+      <frame id="second" x1="300" y1="400" width="150" height="200"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+  </stylesheet>
+  <story>
+    <para>
+      Welcome to RML.
+    </para>
+    <para>
+      This is the part of the RML document where
+      your text is placed.
+    </para>
+    <para>
+      It should be enclosed in &lt;para&gt; and &lt;/para&gt; tags to turn
+      it into paragraphs.
+    </para>
+    <para>
+      You can no longer see borders around the two frames on this
+      page, because showBoundary="0" in the template section at the top.
+      Set it to 1 and the black borders will reappear.
+    </para>
+    <para>
+      This is an extra paragraph which is a bit longer. It is supposed to
+      fill up the rest of the current frame, and demonstrates what happens
+      when a frame fills up with text. It should start flowing into the next
+      frame. blah blah waffle waffle lorem ipsum etc etc
+    </para>
+  </story>
+</document>
